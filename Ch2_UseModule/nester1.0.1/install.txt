@@ -1,0 +1,8 @@
+#cmd Run as Administrator
+
+#Release Package
+#C:\Users\pin05_000\AppData\Local\Programs\Python\Python35\python.exe C:\nester\setup.py sdist
+
+#Install Package
+#C:\Users\pin05_000\AppData\Local\Programs\Python\Python35\python.exe C:\nester 1.0.0\setup.py install
+#C:\Users\pin05_000\AppData\Local\Programs\Python\Python35\python.exe C:\nester 1.0.1\setup.py install

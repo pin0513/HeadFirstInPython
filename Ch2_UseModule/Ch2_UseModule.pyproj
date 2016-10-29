@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4f567042-6002-4871-b173-ecf55622e97b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>004.py</StartupFile>
+    <SearchPath>nester1.1.0\</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Ch2_UseModule</Name>
+    <RootNamespace>Ch2_UseModule</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="004.py" />
+    <Compile Include="003.py" />
+    <Compile Include="nester1.1.0\nester.py" />
+    <Compile Include="nester1.1.0\setup.py" />
+    <Compile Include="nester1.0.1\nester.py" />
+    <Compile Include="nester1.0.1\setup.py" />
+    <Compile Include="nester1.0.0\install.txt" />
+    <Compile Include="nester1.0.0\setup.py" />
+    <Compile Include="nester1.0.0\nester.py" />
+    <Compile Include="002.py" />
+    <Compile Include="001_nester.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nester1.1.0\" />
+    <Folder Include="nester1.0.1\" />
+    <Folder Include="nester1.0.0\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nester1.1.0\install.txt" />
+    <Content Include="nester1.0.1\install.txt" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
